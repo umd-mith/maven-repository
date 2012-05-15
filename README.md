@@ -5,10 +5,10 @@ Overview
 --------
 
 This repository serves primarily to host Maven artifacts for projects
-developed at MITH. We are currently hosting these projects on GitHub for the
+developed at MITH. We are currently hosting these artifacts on GitHub for the
 sake of convenience, and may eventually move to
 [Sonatype's repository hosting service](http://www.sonatype.org/nexus/) in
-order to have these artifacts automatically synced to
+order to have the artifacts automatically synced to
 [Maven Central](http://search.maven.org/). See
 [this blog post](http://cemerick.com/2010/08/24/hosting-maven-repos-on-github/)
 by [Chas Emerick](http://cemerick.com/) for an explanation of how to use
