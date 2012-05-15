@@ -15,9 +15,9 @@ by [Chas Emerick](http://cemerick.com/) for an explanation of how to use
 GitHub to host a Maven repository (and for some reasons that you may or may
 not want to).
 
-This repository currently only holds artifacts for the
-[`mith-jvm-lib`](https://github.com/umd-mith/mith-jvm-lib) libraries. It may
-eventually include other MITH or non-MITH projects.
+This Maven repository currently only holds artifacts for the libraries in the
+[`mith-jvm-lib`](https://github.com/umd-mith/mith-jvm-lib) GitHub repository.
+It may eventually include other MITH (or non-MITH) projects.
 
 Terminology
 -----------
@@ -26,7 +26,7 @@ Note that the word _repository_ is ambiguous throughout this document:
 this [Git _version control repository_](http://git-scm.com/) stores our
 project jars and metadata files, which are structured in such a way that they
 can be used as a
-[_Maven artifact repository_](http://maven.apache.org/guides/introduction/introduction-to-repositories.html).
+[Maven _artifact repository_](http://maven.apache.org/guides/introduction/introduction-to-repositories.html).
 
 Usage
 -----
