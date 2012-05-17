@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>MITH TEI Maven Plugin</name>
+      <prefix>tei</prefix>
+      <artifactId>tei-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

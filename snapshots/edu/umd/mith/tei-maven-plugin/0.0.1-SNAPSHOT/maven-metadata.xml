@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>edu.umd.mith</groupId>
+  <artifactId>tei-maven-plugin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20120517.124221</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20120517124221</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.1-20120517.124221-1</value>
+        <updated>20120517124221</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.1-20120517.124221-1</value>
+        <updated>20120517124221</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
