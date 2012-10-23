@@ -46,7 +46,7 @@ You can then include the MITH library you want to use as a dependency:
     <dependency>
       <groupId>edu.umd.mith</groupId>
       <artifactId>mining</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.1.0-SNAPSHOT</version>
     </dependency>
 
 We are not currently providing any kind of indexing (or even directory
