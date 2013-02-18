@@ -3,11 +3,12 @@
   <groupId>edu.umd.mith</groupId>
   <artifactId>tei-maven-plugin</artifactId>
   <versioning>
-    <latest>0.1.0-SNAPSHOT</latest>
+    <latest>0.2.0-SNAPSHOT</latest>
     <versions>
       <version>0.0.1-SNAPSHOT</version>
       <version>0.1.0-SNAPSHOT</version>
+      <version>0.2.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20121023160701</lastUpdated>
+    <lastUpdated>20130218181136</lastUpdated>
   </versioning>
 </metadata>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.umd.mith</groupId>
+  <artifactId>mith</artifactId>
+  <version>0.2.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>MITH Libraries and Utilities</name>
+  <inceptionYear>2011</inceptionYear>
+
+  <scm>
+    <url>https://github.com/umd-mith/mith-jvm-lib</url>
+    <connection>scm:git:git://github.com/umd-mith/mith-jvm-lib.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:umd-mith/mith-jvm-lib.git</developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>repo</id>
+      <url>http://umd-mith.github.com/maven-repository/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repo</id>
+      <url>http://umd-mith.github.com/maven-repository/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>University of Maryland</name>
+    <url>http://www.umd.edu/</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>trbrown</id>
+      <name>Travis Brown</name>
+      <email>trbrown@umd.edu</email>
+      <organization>Maryland Institute for Technology in the Humanities</organization>
+      <organizationUrl>http://mith.umd.edu/</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>pevans</id>
+      <name>Paul Evans</name>
+      <email>decretist@gmail.com</email>
+      <organization>Maryland Institute for Technology in the Humanities</organization>
+      <organizationUrl>http://mith.umd.edu/</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>proto</module>
+    <module>util</module>
+    <module>mining</module>
+    <module>lift-util</module>
+    <!--<module>cocoon-util</module>-->
+    <module>tei-maven-plugin</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.7</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>1.4</version>
+        <configuration>
+          <licenseName>apache_v2</licenseName>
+          <extraExtensions>
+            <scala>java</scala>
+          </extraExtensions>
+          <excludes>
+            <exclude>**/gov/loc/repository/**</exclude>
+          </excludes>
+        </configuration>
+        <executions>
+          <execution>
+            <id>license-headers</id>
+            <goals>
+              <goal>update-file-header</goal>
+            </goals>
+            <phase>process-sources</phase>
+          </execution>
+          <execution>
+            <id>license-project</id>
+            <goals>
+              <goal>update-project-license</goal>
+            </goals>
+            <phase>process-sources</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+
